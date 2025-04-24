@@ -9,16 +9,16 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
-  .game-container {
-    text-align: center;
-    padding: 2rem;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    width: 100%;
+  button{
+    padding: 20px;
+    margin: 3px;
+    place-items: center;
+    background-color: rgb(62, 249, 249);
+    border: 2px solid white;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
   }
-  
   .game-title {
     color: #3a4a6d;
     margin-bottom: 1.5rem;
@@ -37,7 +37,7 @@ body {
   
   .board-row {
     display: flex;
-    padding: 10px;
+    padding: 25px;
   }
   
   /* Square styling */
