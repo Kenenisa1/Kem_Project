@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import MyButton from './MyButton'
+import TikTak from './TikTak';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -10,9 +11,10 @@ function App() {
 
   return (
     <>
-      <h1>Handle count Function</h1>
-      <MyButton count={count} onClick={handleCount}/>
-      <MyButton count={count} onClick={handleCount}/>
+      <h1>Tik Tac Toe Game</h1>
+      {/* <MyButton count={count} onClick={handleCount}/>
+      <MyButton count={count} onClick={handleCount}/> */}
+      <TikTak/>
 
     </>
   )
