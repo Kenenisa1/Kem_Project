@@ -3,13 +3,27 @@ import { useState } from "react";
 
 export default function Board()
 {
+    const[xIsNext,setXIsNext] =useState(true);
     const [squares, setSquares] = useState(Array(9).fill(null));
 
     function handleClick(i)
     {
+        // if(squares[i])
+        // {
+        //     return
+        // }
         const nextSquares= squares.slice();
-        nextSquares[i]='K';
+        if(xIsNext)
+        {
+            nextSquares[i]='K';
+        }
+        else
+        {
+            nextSquares[i]='M';
+        }
+
         setSquares(nextSquares);
+        setXIsNext(!xIsNext);
     }
     return(
         <>
