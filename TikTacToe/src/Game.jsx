@@ -27,16 +27,15 @@ export default function Game()
             {
                 description='Go to game start';
             }
-            return
-            (
-                <li onClick={() => jumpTo(move)}>
-                    {description}
+            return (
+                <li>
+                  <button onClick={() => jumpTo(move)}>{description}</button>
                 </li>
-            );
-        });
+              );
+            });
 
         return(
-            <div>
+            <>
                 <div>
                     <Board xIsNext={xIsNext} squares={currentSquares} onplay={handlePlay}/>
 
@@ -49,7 +48,7 @@ export default function Game()
 
                 </div>
 
-            <div/>
+            </>
         )
 
 }
