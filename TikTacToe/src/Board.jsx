@@ -1,10 +1,7 @@
 import Square from "./Square";
-import { useState } from "react";
 
-export default function Board()
+export default function Board({xIsNext,squares,onPlay})
 {
-    const[xIsNext,setXIsNext] =useState(true);
-    const [squares, setSquares] = useState(Array(9).fill(null));
 
     function handleClick(i)
     {
@@ -25,8 +22,7 @@ export default function Board()
             nextSquares[i]='M';
         }
 
-        setSquares(nextSquares);
-        setXIsNext(!xIsNext);
+        onPlay(nextSquares);
     }
     
     const winner=calculateWinner(squares);
