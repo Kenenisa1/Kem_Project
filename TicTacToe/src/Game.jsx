@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+import Board from './Board'
 
 export default function Game() {
     const [xIsNext, setXIsNext] = useState(true);
@@ -43,3 +44,4 @@ export default function Game() {
       </div>
     );
   }
+  
