@@ -6,6 +6,6 @@ import Board from './Board'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Board />
+    <Game />
   </StrictMode>,
 )
